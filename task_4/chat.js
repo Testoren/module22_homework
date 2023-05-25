@@ -28,7 +28,7 @@ const success = (position) => {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
     let link = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
-    sendChat(`<a href="${link}" class="location__message"> Ваша гео-локация </a>`);
+    sendChat(`<a href="${link}" class="location__message" target='blank'> Ваша гео-локация </a>`);
 }
 
 const error = () => {
